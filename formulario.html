@@ -6,7 +6,7 @@
 </head>
 <body>
 <section>
-	<form action="#" method="post" >
+	<form action="#" method="post" enctype="multipart/form-data">
 		<div class="two-columns">
 			<!--<label for="username"> username</label>-->
 		<input type="text" name="username" id="username" placeholder="pick a username">
@@ -16,6 +16,10 @@
 		<input type="email" name="email" id="email" placeholder="pick">
 		<label for="password">password</label>
 		<input type="password" name="password" id="password">
+
+		<label for="img"> imagem</label>
+		<input type="file" name="img" id="img">
+		
 		<fieldset>
 		<legend>select all your sex</legend>
 		<input type="radio" name="sex" id="fem" value="f">
@@ -35,7 +39,19 @@
 
 		<label for="service">frade the service</label>
 		<input type="range" name="service" id="service" min="5" max="20">
-		
+
+		<label for="age">age</label>
+		<input type="number" name="age" id="age" min="10">
+
+		<label for="fb">fabebook</label>
+		<input type="url" name="fb" id="fb">
+
+		<label for="tel">telefono</label>
+		<input type="tel" name="tel" id="tel">
+
+		<label for="color">color</label>
+		<input type="color" name="color" id="color">
+
 		<button type="submit" name="button"> login</button>
 	</form>
 </section>
