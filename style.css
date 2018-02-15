@@ -1,9 +1,25 @@
 section{
+	display: flex;
+	justify-content: center;
+}
+form{
 	width: 380px;
+	border:1px solid;
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+	border-radius: 5px;
 }
 label{
 	display: block;
 
+}
+.two-columns{
+	display: flex;
+}
+.two-columns > *{
+	width: 41.5%;
+	/*flex-basis: 40%;*/
 }
 input{
 	border-radius: 5px;
